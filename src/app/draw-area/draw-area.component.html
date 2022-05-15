@@ -1,0 +1,10 @@
+<div
+  id="playground"
+  #playground
+  (mousedown)="drawStart($event)"
+  (mousemove)="drawMove($event.x, $event.y, $event)"
+  (mouseup)="drawEnd()"
+  (touchstart)="drawStart($event)"
+  (touchmove)="drawMove($event.touches[0].clientX, $event.touches[0].clientY, $event)"
+  (touchend)="drawEnd()"
+></div>
